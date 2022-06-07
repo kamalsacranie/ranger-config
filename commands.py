@@ -4,6 +4,15 @@
 
 from ranger.api.commands import Command
 import os
+from plugins.ranger_devicons import (
+    file_node_extensions,
+    file_node_exact_matches,
+)
+
+# Adding icons to our icon list from ranger devicons
+file_node_extensions["anki"] = "טּ"
+file_node_extensions["apkg"] = ""
+file_node_exact_matches["TODO"] = ""
 
 # https://github.com/ranger/ranger/wiki/Integrating-File-Search-with-fzf
 # Now, simply bind this function to a key, by adding this to your ~/.config/ranger/rc.conf: map <C-f> fzf_select
